@@ -14,7 +14,6 @@ function App() {
     deviceCategory: "Android TV",
     manufacturer: "Sony Corp.",
     manufacturedIn: "Japan",
-    countryFlag: "path_to_japan_flag_image",
     productCapability: 80
   };
   return (

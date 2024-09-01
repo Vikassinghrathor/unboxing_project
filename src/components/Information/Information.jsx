@@ -1,4 +1,4 @@
-
+import RedDot from "../../assets/RedDot.svg";
 const InformationItem = ({ label, value }) => (
   <div className="flex flex-col items-center self-stretch my-auto">
     <div className="text-sm font-medium tracking-tight text-neutral-500">{label}</div>
@@ -30,7 +30,7 @@ const Information = ({ productInfo }) => {
           <div className="text-sm font-semibold text-neutral-500">Manufactured In</div>
           <div className="flex gap-3 items-center mt-4 text-xl tracking-tight whitespace-nowrap text-neutral-100">
             <img
-              src={productInfo.countryFlag}
+              src={RedDot}
               alt={`${productInfo.manufacturedIn} flag`}
               className="object-contain w-4 rounded-3xl aspect-square"
             />

@@ -1,0 +1,13 @@
+/* SidebarMenu.css */
+
+/* Hide the default scrollbar for Webkit browsers */
+.sidebar-menu::-webkit-scrollbar {
+  width: 0px; /* Hide the scrollbar */
+  background: transparent; /* Optional: make the background transparent */
+}
+
+/* Hide scrollbar in Firefox */
+.sidebar-menu {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
