@@ -1,8 +1,14 @@
+import { useState } from 'react';
+
 const HeaderNavigation = () => {
+  // State to keep track of the active navigation item
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  // Navigation items data
   const navItems = [
-    { label: "Repair Services", isActive: true },
-    { label: "Replacement Policy", isActive: false },
-    { label: "Safety & Energy Efficiency", isActive: false },
+    { label: 'Repair Services' },
+    { label: 'Replacement Policy' },
+    { label: 'Safety & Energy Efficiency' },
   ];
 
   return (
@@ -17,12 +23,13 @@ const HeaderNavigation = () => {
           {navItems.map((item, index) => (
             <div
               key={index}
+              onClick={() => setActiveIndex(index)} // Set active index on click
               className={`cursor-pointer ${
-                item.isActive ? "text-orange-500" : ""
+                activeIndex === index ? 'text-orange-500' : ''
               }`}
             >
               <div>{item.label}</div>
-              {item.isActive && (
+              {activeIndex === index && (
                 <div className="h-px bg-orange-500 mt-1" />
               )}
             </div>

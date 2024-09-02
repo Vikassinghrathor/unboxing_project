@@ -2,7 +2,7 @@ import "./SidebarMenu.css"; // Make sure to create this CSS file for the custom 
 
 function SidebarMenu() {
   return (
-    <div className="sidebar-menu flex overflow-hidden flex-col pt-2.5 text-lg font-semibold text-white rounded-none border-2 border-solid bg-neutral-900 border-neutral-700 border-opacity-50 max-w-[334px] shadow-[2px_4px_8px_rgba(13,13,13,1)] h-full overflow-y-auto">
+    <div className="sidebar-menu flex overflow-hidden flex-col pt-2.5 text-lg font-semibold text-white rounded-none border-2 border-solid bg-neutral-900 border-neutral-700 border-opacity-50 max-w-[334px] shadow-[2px_4px_8px_rgba(13,13,13,1)] overflow-y-auto h-[878px]">
       {[
         { label: "Gallery", paddingRight: "pr-56" },
         { label: "Specifications", paddingRight: "pr-44" },

@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className="flex justify-between items-center bg-black p-4 w-full">
+    <header className="flex justify-between items-center bg-black p-1 w-full mt-5">
       {/* Left Section: Logo and Product Information */}
       <div className="flex items-center gap-4">
         <img
