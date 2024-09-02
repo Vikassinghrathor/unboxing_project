@@ -21,6 +21,7 @@ function App() {
       <Sidebar className="sidebar" />
       <div className="main-content">
         <Header className="header" />
+        <hr style={{width: "100%" , border: "1px solid #353535" , marginTop: "25px"}}/>
         <div style={{paddingTop: '20px'}}>
         <Information className="information" productInfo={productInfo} />
         </div>

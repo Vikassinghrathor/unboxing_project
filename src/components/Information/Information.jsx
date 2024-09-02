@@ -1,7 +1,9 @@
 import RedDot from "../../assets/RedDot.svg";
 const InformationItem = ({ label, value }) => (
   <div className="flex flex-col items-center self-stretch my-auto">
-    <div className="text-sm font-medium tracking-tight text-neutral-500">{label}</div>
+    <div className="text-sm font-medium tracking-tight text-neutral-500">
+      {label}
+    </div>
     <div className="mt-4 text-xl font-semibold text-neutral-100">{value}</div>
   </div>
 );
@@ -12,7 +14,9 @@ const Divider = () => (
 
 const Information = ({ productInfo }) => {
   return (
-    <div className="flex overflow-hidden flex-col justify-center items-start px-6 py-3.5 rounded-xl border-2 border-solid shadow-sm bg-neutral-900 border-neutral-700 border-opacity-50 max-md:px-5">
+    <div
+      className={`flex overflow-hidden flex-col justify-center items-start px-6 py-3.5 rounded-xl border-2 border-solid shadow-sm bg-neutral-900 border-neutral-700 border-opacity-50 max-md:px-5 max-md:hidden`}
+    >
       <div className="flex flex-wrap gap-7 items-center max-md:max-w-full">
         <InformationItem label="Catalog" value={productInfo.catalog} />
         <Divider />
@@ -22,12 +26,20 @@ const Information = ({ productInfo }) => {
         <Divider />
         <InformationItem label="Model No" value={productInfo.modelNo} />
         <Divider />
-        <InformationItem label="Device category" value={productInfo.deviceCategory} />
+        <InformationItem
+          label="Device category"
+          value={productInfo.deviceCategory}
+        />
         <Divider />
-        <InformationItem label="Manufacturer" value={productInfo.manufacturer} />
+        <InformationItem
+          label="Manufacturer"
+          value={productInfo.manufacturer}
+        />
         <Divider />
         <div className="flex flex-col items-center self-stretch my-auto">
-          <div className="text-sm font-semibold text-neutral-500">Manufactured In</div>
+          <div className="text-sm font-semibold text-neutral-500">
+            Manufactured In
+          </div>
           <div className="flex gap-3 items-center mt-4 text-xl tracking-tight whitespace-nowrap text-neutral-100">
             <img
               src={RedDot}
@@ -45,8 +57,8 @@ const Information = ({ productInfo }) => {
             </div>
             <div className="flex flex-col items-center mt-2.5 max-w-full w-[172px]">
               <div className="flex flex-col w-full rounded-[98px] bg-neutral-700">
-                <div 
-                  className="flex shrink-0 h-2 bg-orange-500 rounded-[98px]" 
+                <div
+                  className="flex shrink-0 h-2 bg-orange-500 rounded-[98px]"
                   style={{ width: `${productInfo.productCapability}%` }}
                 />
               </div>

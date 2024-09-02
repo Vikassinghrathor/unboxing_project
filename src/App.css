@@ -3,7 +3,7 @@
 .app {
   display: flex;
   width: 100%;
-  height: 1281px;
+  height: 1350px;
   background-color: #0D0D0D;
   color: white;
 }
@@ -88,5 +88,67 @@ body {
   
   .question-editor {
     width: calc(100% - 334px);
+  }
+}
+
+/* App.css */
+
+/* For small screens, hide the sidebar */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; /* Sidebar will be hidden by default on mobile */
+  }
+}
+
+/* App.css */
+
+
+/* General responsive settings */
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column; /* Stack items vertically */
+    align-items: start; /* Align items to the left */
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .header .text-base {
+    font-size: 0.9rem; /* Smaller text on small screens */
+  }
+
+  .header .flex-wrap {
+    gap: 8px; /* Adjust spacing for icons */
+  }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 640px) {
+  .header .flex-wrap {
+    flex-direction: column; /* Stack right section items */
+    align-items: flex-start;
+  }
+
+  .header h1 {
+    font-size: 1.5rem; /* Smaller heading on mobile */
+  }
+
+  .header .gap-4 {
+    gap: 2px; /* Reduce gaps between items */
+  }
+
+  .header img {
+    width: 24px; /* Smaller icon sizes */
+    height: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .information {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-content{
+    height: 100%;
   }
 }

@@ -10,7 +10,7 @@ import SidebarDots from "../../assets/SidebarDots.svg";
 
 const Sidebar = () => {
   return (
-    <div className="relative flex flex-col gap-2 items-center bg-#0D0D0D h-[1125px] min-h-[1024px] w-[102px] md:w-[80px] lg:w-[102px] border-r border-[#353535] pt-4">
+    <div className="relative flex flex-col gap-2 items-center bg-#0D0D0D h-[1150px] min-h-[1024px] w-[102px] md:w-[80px] lg:w-[102px] border-r border-[#353535] pt-6">
       <div className="flex flex-col items-center w-full h-full">
         {/* Logo */}
         <div className="mt-4 mb-8">
@@ -18,7 +18,7 @@ const Sidebar = () => {
         </div>
 
         {/* Navigation Icons */}
-        <nav className="flex flex-col items-center space-y-10 flex-grow pt-10">
+        <nav className="flex flex-col items-center space-y-10 flex-grow pt-20">
           <img src={SidebarIcon1} alt="logo1" className="w-8 h-8" />
           <img src={SidebarIcon1} alt="logo1" className="w-8 h-8" />
           <img src={SidebarIcon3} alt="logo3" className="w-8 h-8" />
